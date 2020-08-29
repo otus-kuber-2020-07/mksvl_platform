@@ -3,7 +3,7 @@ kind: ClusterRoleBinding
 metadata:
   name: bob-admin
 subjects:
-- kind: User
+- kind: ServiceAccount
   name: bob
   namespace: default
 roleRef:
