@@ -4,9 +4,8 @@ metadata:
   name: jane-admin
   namespace: dev
 subjects:
-- kind: User
+- kind: ServiceAccount
   name: jane
-  apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
   name: admin
@@ -20,9 +19,8 @@ metadata:
   name: ken-view
   namespace: dev
 subjects:
-- kind: User
+- kind: ServiceAccount
   name: ken
-  apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
   name: view
