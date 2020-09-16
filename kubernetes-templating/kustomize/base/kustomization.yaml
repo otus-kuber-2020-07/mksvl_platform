@@ -1,0 +1,6 @@
+commonLabels:
+    app: hipster-shop
+  resources:
+    - deployment.yaml
+    - service.yaml
+  
